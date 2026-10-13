@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Classic Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="outer-frame">
+    <div class="inner-frame">
+
+      <header>
+        <a href="#home" class="logo">MY PORTFOLIO</a>
+
+        <button class="menu-toggle" id="menuToggle"
+          aria-label="Toggle navigation" aria-expanded="false">
+          ☰
+        </button>
+
+        <nav id="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero reveal" id="home">
+          <div class="hero-text">
+            <p class="eyebrow">WELCOME TO MY WORLD</p>
+            <h1>Hello, I'm <span>Angel Rose Bose</span></h1>
+            <h2>Aspiring Web Developer</h2>
+            <p>
+              I am passionate about technology, creativity,
+              and building beautiful websites using HTML,
+              CSS, and JavaScript.
+            </p>
+            <a href="#projects" class="btn">Explore My Work</a>
+          </div>
+
+          <div class="profile">
+            <div class="profile-circle">
+              <img
+
+              >
+            </div>
+            <p class="profile-caption">CREATIVE • PASSIONATE • DEDICATED</p>
+          </div>
+        </section>
+
+        <section class="section reveal" id="about">
+          <p class="eyebrow">GET TO KNOW ME</p>
+          <h2>About <span>Me</span></h2>
+          <p class="section-text">
+            I am a student learning web development. I enjoy
+            designing websites, solving problems, and exploring
+            new technologies. My goal is to become a skilled
+            developer and create useful digital experiences.
+          </p>
+        </section>
+
+        <section class="section reveal" id="skills">
+          <p class="eyebrow">WHAT I AM LEARNING</p>
+          <h2>My <span>Skills</span></h2>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">🌐</div>
+              <h3>HTML</h3>
+              <p>Building website structure</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">🎨</div>
+              <h3>CSS</h3>
+              <p>Styling and responsive layouts</p>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-icon">⚡</div>
+              <h3>JavaScript</h3>
+              <p>Interactive website features</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section reveal" id="projects">
+          <p class="eyebrow">MY RECENT WORK</p>
+          <h2>My <span>Projects</span></h2>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-number">01</div>
+              <h3>Personal Website</h3>
+              <p>A personal webpage introducing myself and my interests.</p>
+              <span class="tag">HTML • CSS</span>
+            </article>
+
+            <article class="project-card">
+              <div class="project-number">02</div>
+              <h3>Portfolio Design</h3>
+              <p>A classic portfolio showcasing skills and achievements.</p>
+              <span class="tag">HTML • CSS • JS</span>
+            </article>
+
+            <article class="project-card">
+              <div class="project-number">03</div>
+              <h3>Interactive Website</h3>
+              <p>A simple website with buttons and interactive features.</p>
+              <span class="tag">JavaScript</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact-section reveal" id="contact">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Contact <span>Me</span></h2>
+          <p class="section-text">
+            Have a question or want to work together? Send me a message.
+          </p>
+
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Your name"
+              aria-label="Your name" required>
+
+            <input type="email" id="email" placeholder="Your email"
+              aria-label="Your email" required>
+
+            <textarea id="message" placeholder="Your message"
+              aria-label="Your message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Prepare Message</button>
+            <p id="formStatus" role="status"></p>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer-line"></div>
+        <p>© <span id="year"></span> Your Name</p>
+        <p>Designed with creativity and passion.</p>
+        <a href="#home" class="back-top">Back to Top ↑</a>
+      </footer>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
